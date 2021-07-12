@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:columnCount="2"
+    app:rowCount="2"
+    app:orientation="horizontal"
+    tools:context=".Menu_UI"
+    tools:showIn="@layout/app_bar_menu__ui">
+
+    <FrameLayout
+        android:layout_width="9dp"
+        android:layout_height="3dp"
+        android:background="#5F9EA0"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPlayy"
+                android:layout_width="98dp"
+                android:layout_height="96dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/play" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="98dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="33dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginBottom="75dp"
+                android:text="Start Quiz"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#B8860B"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgScoree"
+                android:layout_width="98dp"
+                android:layout_height="103dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/score" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgScoree"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-39dp"
+                android:text="High Score"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="72dp"
+        android:layout_height="14dp"
+        android:background="#2E8B57"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="51dp"
+        android:layout_height="26dp"
+        android:background="#BC8F8F"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</android.support.v7.widget.GridLayout>

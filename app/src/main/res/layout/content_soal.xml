@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradientcolor"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Soal"
+    tools:showIn="@layout/activity_soal">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:id="@+id/editSoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Soal"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/editJwbnBenar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jawaban Benar"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:id="@+id/editJwbnSalah1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jawaban Salah"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:id="@+id/editJwbnSalah2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jawaban 2 Salah"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="262dp">
+
+        <Button
+            android:id="@+id/btnBatal"
+            android:layout_width="139dp"
+            android:layout_height="62dp"
+            android:background="@color/orange"
+            android:text="Batal"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.219" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="139dp"
+            android:layout_height="62dp"
+            android:background="@color/orange"
+            android:text="Save"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.873"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.221" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

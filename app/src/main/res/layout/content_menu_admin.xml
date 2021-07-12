@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MenuAdmin"
+    tools:showIn="@layout/app_bar_menu_admin">
+
+    <FrameLayout
+        android:layout_width="201dp"
+        android:layout_height="197dp"
+        android:background="#B8860B"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <RelativeLayout
+            android:layout_width="148dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgAddData"
+                android:layout_width="63dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                android:src="@drawable/ic_add_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="56dp"
+                android:text="Add Question"
+                android:textColor="@android:color/background_light" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="189dp"
+        android:layout_height="207dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#5F9EA0">
+
+        <RelativeLayout
+            android:layout_width="182dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgHapus"
+                android:layout_width="72dp"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="57dp"
+                app:srcCompat="@drawable/trash" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="55dp"
+                android:text="Delete Question"
+                android:textColor="@android:color/background_light" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnTmpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="217dp"
+        android:text="View Data" />
+
+</RelativeLayout>
